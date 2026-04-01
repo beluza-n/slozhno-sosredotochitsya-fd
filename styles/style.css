@@ -143,9 +143,13 @@
   margin-bottom: 20px;
 }
 
+.article__section {
+  margin: 20px 0;
+  margin-bottom: 20px;
+}
+
 .article__section_title {
   letter-spacing: -0.025em;
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -162,8 +166,34 @@
 }
 
 /* КАРТИНКИ */
+.images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
 .article__image {
   width: 100%;
+  /* display: block; */
   /* height: 100%;
   object-fit: contain; */
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  height: calc(100vh - 20px);
+  /* min-height: 648px; */
+  display: grid;
+  margin-top: 50px;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  color: var(--title-color);
+  font-weight: var(--font-weight-bold);
+  /* line-height: 0.83em; */
+  align-self: center;
+  justify-self: center;
 }
