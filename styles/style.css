@@ -137,12 +137,16 @@
   border-bottom-color: var(--font-color);
 }
 
+.text-accent:focus-visible {
+  outline: 1px solid var(--font-color);
+}
+
 .article {
   margin-bottom: 48px;
 }
 
 .article__title {
-  color: var(--accent-color);
+  color: var(--article-title-color);
   font-size: 18px;
   font-weight: var(--font-weight-bold);
   margin-top: 50px;
@@ -189,7 +193,6 @@
 .footer {
   position: relative;
   height: calc(100vh - 20px);
-  /* min-height: 648px; */
   display: grid;
   margin-top: 50px;
 }

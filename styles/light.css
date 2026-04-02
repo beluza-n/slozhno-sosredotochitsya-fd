@@ -11,4 +11,30 @@
   */
   --page-bg-image-url: url('../images/cover-image-light.png');
   --page-bg-color: #ffeef6;
+  --font-color: #353430;
+  --accent-color: #FF8DCB;
+  --title-color: #FFC2E6;
+  --article-title-color: #353430;
+  --subtitle-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем только те же переменные, что и выше */
+    --page-bg-image-url: url('../images/cover-image-light.png');
+    --page-bg-color: #ffeef6;
+    --font-color: #353430;
+    --accent-color: #FF8DCB;
+    --title-color: #FFC2E6;
+    --article-title-color: #353430;
+    --subtitle-color: #353430;
+  }
+
+  :root:not(.theme-dark) .header__rec {
+    display: none;
+  }
+}
+
+:root.theme-light .header__rec {
+  display: none;
 }
