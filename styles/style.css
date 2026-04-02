@@ -189,6 +189,22 @@
   /* min-width: 0; */
 }
 
+.article__what {
+  padding-top: 3px;
+}
+
+.article__what .article__title {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.article__what-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
 /* КАРТИНКИ */
 .images {
   display: grid;
@@ -233,6 +249,14 @@
     margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+  .article {
+    margin-bottom: 76px;
+  }
+  .article__what .article__title {
+    /* max-width: min(236px, 100%); */
+    max-width: 30vw;
+  }
+
 
   .article__why {
     grid-template-columns: 1fr 2fr;
@@ -257,7 +281,17 @@
     /* align-items: flex-end; */
     gap: 12px;
   }
+  
+  /* .article {
+    margin-bottom: 60px;
+  } */
+
   .article__section_text{
     letter-spacing: 0.06em;
+  }
+
+
+  .article__what-content {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
