@@ -90,15 +90,27 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  border: none;
+  border: 1px solid transparent;
   color: var(--accent-color);
   font-size: 18px;
   text-transform: lowercase;
   padding: 0px 12px;
 }
 
+
+.header__theme-menu-button:hover {
+  border-color: color-mix(in srgb, var(--accent-color) 50%, transparent);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom-color: var(--accent-color);
+}
+
+
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
+  pointer-events: none;
 }
 
 .header__title {
