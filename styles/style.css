@@ -13,7 +13,6 @@
   color: var(--font-color);
   font-family: var(--main-font-family);
   font-weight: var(--font-weight-regular);
-  padding: 10px;
 }
 
 .decorated-zone {
@@ -29,31 +28,32 @@
 }
 
 .decorated-zone::before {
-  top: 0;
-  right: 0;
+  top: var(--padding-small);
+  right: var(--padding-small);
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
-  bottom: 0;
-  left: 0;
+  bottom: var(--padding-small);
+  left: var(--padding-small);
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
 
 .header {
   position: relative;
-  height: calc(100vh - 20px);
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
+  padding: var(--padding-small);
 }
 
 .header__rec {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: var(--padding-small);
+  right: calc(var(--padding-small) + 10px);
   z-index: 1;
   display: inline-flex;
   align-items: center;
@@ -147,11 +147,15 @@
 }
 
 .main {
-  margin-top: 50px;
+  padding: var(--padding-small);
+  margin-top: 30px;
 }
 
-.article {
+.article:not(:last-child) {
   margin-bottom: 48px;
+}
+.article:last-child {
+  margin-bottom: 32px;
 }
 
 .article__title {
@@ -242,10 +246,10 @@
 
 /* FOOTER */
 .footer {
+  padding: var(--padding-small);
   position: relative;
-  height: calc(100vh - 20px);
+  height: 100vh;
   display: grid;
-  margin-top: 52px;
 }
 
 .footer__title {
@@ -259,19 +263,30 @@
 
 /* ПЛАНШЕТ */
 @media (width >=768px) {
-  .page {
-    padding: 20px;
-  }
   .header {
-    height: calc(100vh - 40px);
+    height: 100vh;
+    padding: var(--padding-medium);
+  }
+  .header__rec {
+    top: var(--padding-medium);
+    right: calc(var(--padding-medium) + 10px);
+  }
+  .decorated-zone::before {
+    top: var(--padding-medium);
+    right: var(--padding-medium);
+  }
+  .decorated-zone::after {
+    bottom: var(--padding-medium);
+    left: var(--padding-medium);
   }
   .header__title {
-    margin-left: -20px;
+    margin-left: calc(-1 * var(--padding-medium));
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .main {
-    margin-top: 80px;
+    padding: 0 var(--padding-medium);
+    margin-top: 60px;
   }
 
   .article {
@@ -336,8 +351,8 @@
   }
 
   .footer {
-    height: calc(100vh - 40px);
-    margin-top: 80px;
+    height: 100vh;
+    margin-top: 60px;
   }
 
   .footer__title {
