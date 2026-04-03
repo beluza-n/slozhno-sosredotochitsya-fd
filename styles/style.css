@@ -228,6 +228,12 @@
 
 
 /* КАРТИНКИ */
+
+.article__images {
+  display: flex;
+  flex-direction: column;
+}
+
 .images {
   display: grid;
   grid-template-columns: 1fr;
@@ -236,9 +242,7 @@
 
 .article__image {
   width: 100%;
-  /* display: block; */
-  /* height: 100%;
-  object-fit: contain; */
+  display: block;
 }
 
 /* FOOTER */
@@ -294,6 +298,49 @@
   .article__how {
     grid-template-columns: 1fr 2fr;
     margin-top: 80px;
+  }
+  
+  .article__images {
+    gap: 10px;
+  }
+  
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .images .article__image {
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .image__sunset {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .image__ice-cream {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .image__tape {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+  }
+
+  .image__books {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .image__street {
+    grid-column: 2 / span 2;
+    grid-row: 3;
   }
 
   .footer__title {
