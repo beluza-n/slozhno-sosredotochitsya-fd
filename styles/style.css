@@ -157,40 +157,40 @@
   margin-top: 30px;
 }
 
-.article {
+.section {
   margin-bottom: 50px;
 }
-.article__images {
+.section__images {
   margin-bottom: 32px;
 }
 
-.article__title {
-  color: var(--article-title-color);
+.section__title {
+  color: var(--section-title-color);
   font-size: var(--font-size-main);
   font-weight: var(--font-weight-bold);
 }
 
-.article__section_title {
+.section__article_title {
   margin-bottom: 10px;
   font-size: var(--font-size-main);
 }
 
-.article__section_subtitle {
+.section__article_subtitle {
   margin-bottom: 11px;
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-main);
 }
 
-.article__section_text {
+.section__article_text {
   line-height: 1.3em;
   font-size: var(--font-size-main);
 }
 
-.article__section_text:not(:last-child) {
+.section__article_text:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.article__why {
+.section__why {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
@@ -198,13 +198,13 @@
   align-items: start;
 }
 
-.article__why-content {
+.section__why-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.article__how {
+.section__how {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
@@ -212,27 +212,27 @@
   align-items: start;
 }
 
-.article__how-content {
+.section__how-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
   min-width: 0;
 }
 
-.article__section_title_how {
+.section__article_title_how {
   margin-bottom: 0px;
 }
 
-.article__what {
+.section__what {
   padding-top: 3px;
 }
 
-.article__what .article__title {
+.section__what .section__title {
   max-width: 100%;
   margin-bottom: 20px;
 }
 
-.article__what-content {
+.section__what-content {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -240,18 +240,18 @@
 
 /* КАРТИНКИ */
 
-.article__images {
+.section__images {
   display: flex;
   flex-direction: column;
 }
 
-.images {
+.section__images-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
 }
 
-.article__image {
+.section__image {
   width: 100%;
   display: block;
 }
@@ -302,52 +302,52 @@
     margin-top: 60px;
   }
 
-  .article {
+  .section {
     margin-bottom: 79px;
   }
 
-  /* нужно повторение, иначе стиль .article в медиазапросе перекрывает*/
-  .article__images {
+  /* нужно повторение, иначе стиль .section в медиазапросе перекрывает*/
+  .section__images {
     margin-bottom: 32px;
   }
 
-  .article__what .article__title {
+  .section__what .section__title {
     max-width: 30vw;
   }
 
-  .article__why {
+  .section__why {
     grid-template-columns: 1fr 2fr;
     margin-top: 30px;
   }
 
-  .article__how {
+  .section__how {
     grid-template-columns: 1fr 2fr;
     margin-top: 80px;
   }
-  .article__title_how {
+  .section__title_how {
     grid-column: 1;
     grid-row: 1 / span 2;
   }
-  .article__section_title_how {
+  .section__article_title_how {
     grid-column: 2;
     grid-row: 1;
   }
-  .article__how-content {
+  .section__how-content {
     grid-column: 2;
     grid-row: 2;
   }
 
-  .article__images {
+  .section__images {
     gap: 10px;
   }
 
-  .images {
+  .section__images-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: stretch;
   }
 
-  .images .article__image {
+  .section__images-grid .section__image {
     height: 100%;
     min-width: 0;
     min-height: 0;
@@ -401,15 +401,15 @@
     gap: 12px;
   }
 
-  .article__why {
+  .section__why {
     column-gap: 10px;
   }
 
-  .article__how {
+  .section__how {
     column-gap: 10px;
   }
 
-  .article__what-content {
+  .section__what-content {
     grid-template-columns: repeat(3, 1fr);
   }
 }

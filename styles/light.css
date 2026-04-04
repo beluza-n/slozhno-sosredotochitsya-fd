@@ -15,7 +15,7 @@
   --accent-color: #FF8DCB;
   --decor-color: rgb(53, 52, 48);
   --title-color: #FFC2E6;
-  --article-title-color: #353430;
+  --section-title-color: #353430;
   --subtitle-color: #353430;
 }
 
@@ -28,7 +28,7 @@
     --accent-color: #FF8DCB;
     --decor-color: rgb(53, 52, 48);
     --title-color: #FFC2E6;
-    --article-title-color: #353430;
+    --section-title-color: #353430;
     --subtitle-color: #353430;
   }
 
