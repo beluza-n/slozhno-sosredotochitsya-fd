@@ -9,12 +9,12 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --page-bg-image-url: url('../images/cover-image-light.png');
+  --page-bg-image-url: url("../images/cover-image-light.png");
   --page-bg-color: #ffeef6;
   --font-color: #353430;
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --decor-color: rgb(53, 52, 48);
-  --title-color: #FFC2E6;
+  --title-color: #ffc2e6;
   --section-title-color: #353430;
   --subtitle-color: #353430;
 }
@@ -22,12 +22,12 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем только те же переменные, что и выше */
-    --page-bg-image-url: url('../images/cover-image-light.png');
+    --page-bg-image-url: url("../images/cover-image-light.png");
     --page-bg-color: #ffeef6;
     --font-color: #353430;
-    --accent-color: #FF8DCB;
+    --accent-color: #ff8dcb;
     --decor-color: rgb(53, 52, 48);
-    --title-color: #FFC2E6;
+    --title-color: #ffc2e6;
     --section-title-color: #353430;
     --subtitle-color: #353430;
   }

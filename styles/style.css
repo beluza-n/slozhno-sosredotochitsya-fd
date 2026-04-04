@@ -389,7 +389,6 @@
 
 /* ДЕСКТОП */
 @media (width >=1024px) {
-
   .header__theme-menu {
     align-self: self-start;
     justify-self: center;
