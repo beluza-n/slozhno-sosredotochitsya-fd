@@ -137,6 +137,8 @@
 }
 
 .text-accent {
+  text-decoration: none;
+  color: inherit;
   text-shadow: 2px 2px 0 var(--accent-color);
   border-bottom: 1px solid transparent;
   cursor: pointer;
