@@ -184,6 +184,10 @@
   font-size: var(--font-size-main);
 }
 
+.article__section_text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .article__why {
   display: grid;
   grid-template-columns: 1fr;
