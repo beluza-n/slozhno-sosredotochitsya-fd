@@ -9,11 +9,13 @@
   --main-font-family: 'IBM Plex Mono', sans-serif;
   --font-color: #f1b2ce;
   --accent-color: #FF0070;
+  --decor-color: rgb(255, 0, 112);
   --title-color: #DB00FF;
   --article-title-color: #FF0070;
   --subtitle-color: #000028;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+  --font-size-main: 18px;
   --padding-small: 10px;
   --padding-medium: 20px;
 }
