@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--page-bg-color);
-
   min-height: 100vh;
   color: var(--font-color);
   font-family: var(--main-font-family);
@@ -160,7 +159,7 @@
 .section {
   margin-bottom: 50px;
 }
-.section__images {
+.section.section__images {
   margin-bottom: 32px;
 }
 
@@ -220,7 +219,7 @@
 }
 
 .section__article_title_how {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .section__what {
@@ -239,7 +238,6 @@
 }
 
 /* КАРТИНКИ */
-
 .section__images {
   display: flex;
   flex-direction: column;
@@ -288,10 +286,12 @@
     top: var(--padding-medium);
     right: var(--padding-medium);
   }
+
   .decorated-zone::after {
     bottom: var(--padding-medium);
     left: var(--padding-medium);
   }
+
   .header__title {
     margin-left: calc(-1 * var(--padding-medium));
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -304,11 +304,6 @@
 
   .section {
     margin-bottom: 79px;
-  }
-
-  /* нужно повторение, иначе стиль .section в медиазапросе перекрывает*/
-  .section__images {
-    margin-bottom: 32px;
   }
 
   .section__what .section__title {
@@ -324,14 +319,17 @@
     grid-template-columns: 1fr 2fr;
     margin-top: 80px;
   }
+
   .section__title_how {
     grid-column: 1;
     grid-row: 1 / span 2;
   }
+
   .section__article_title_how {
     grid-column: 2;
     grid-row: 1;
   }
+
   .section__how-content {
     grid-column: 2;
     grid-row: 2;
@@ -391,6 +389,7 @@
 
 /* ДЕСКТОП */
 @media (width >=1024px) {
+
   .header__theme-menu {
     align-self: self-start;
     justify-self: center;
